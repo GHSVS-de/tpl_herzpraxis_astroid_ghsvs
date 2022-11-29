@@ -17,8 +17,8 @@ Das ist kein Template, das man installiert und dann läuft es reibungslos. Es br
 
 ## Next step: Build package for this repository
 - Prepare/adapt `./package.json`.
-  - Don't forget: Adapt parameter `versionSub` (is used Bootstrap version!
-	- Don't forget: Adapt object `update.versionsSub` (for placeholders like `{{versionsSub.jquery}}` in joomla.asset.json!
+  - Don't forget: Adapt parameter `versionSub` (is used Bootstrap version).
+  - Don't forget: Adapt object `update.versionsSub` (for placeholders like `{{versionsSub.jquery}}` in `joomla.asset.json`.
 - `cd /mnt/z/git-kram/tpl_herzpraxis_astroid_ghsvs`
 
 ## node/npm updates/installation
