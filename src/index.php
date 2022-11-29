@@ -13,7 +13,7 @@ if (! ($done = PluginHelper::isEnabled('system', 'astroidghsvs'))) {
 }
 
 $wa = $this->getWebAssetManager();
-$wa->usePreset('template.herzpraxis_astroid_ghsvs.framework');
+$wa->usePreset('herzpraxis_astroid_ghsvs.framework');
 
 $isRobot = Factory::getApplication()->client->robot;
 

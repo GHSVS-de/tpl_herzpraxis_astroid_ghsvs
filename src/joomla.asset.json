@@ -1,24 +1,24 @@
 {
-  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
-  "name": "{{name}}",
-  "version": "{{version}}",
+	"$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+	"name": "{{name}}",
+	"version": "{{version}}",
 	"versionSub": "{{versionSub}}",
-  "description": "{{description}}",
-  "license": "{{licenseLong}}",
-  "assets": [
-    {
-      "name": "template.herzpraxis_astroid_ghsvs.framework",
-      "type": "preset",
-      "dependencies": [
-				"bootstrap.es5#script",
-        "jquery#script",
-				"template.script#script",
-				"template.user#style",
-				"template.user#script"
-      ]
-    },
+	"description": "{{description}}",
+	"license": "{{licenseLong}}",
+	"assets": [
 		{
-			"name": "template.script",
+			"name": "herzpraxis_astroid_ghsvs.framework",
+			"type": "preset",
+			"dependencies": [
+				"bootstrap.es5#script",
+				"jquery#script",
+				"herzpraxis_astroid_ghsvs.script#script",
+				"herzpraxis_astroid_ghsvs.user#style",
+				"herzpraxis_astroid_ghsvs.user#script"
+			]
+		},
+		{
+			"name": "herzpraxis_astroid_ghsvs.script",
 			"description": "Javascript specific for this template. Inside folder TEMPLATENAME/js.",
 			"type": "script",
 			"uri": "script.js",
@@ -26,156 +26,156 @@
 			"version": "{{version}}"
 		},
 		{
-			"name": "template.user",
+			"name": "herzpraxis_astroid_ghsvs.user",
 			"description": "Optional Javascript overrides. Inside folder TEMPLATENAME/js.",
 			"type": "script",
 			"uri": "user.js",
 			"weight": 1000
 		},
 		{
-			"name": "template.user",
+			"name": "herzpraxis_astroid_ghsvs.user",
 			"description": "Optional CSS overrides. Inside folder TEMPLATENAME/css.",
 			"type": "style",
 			"uri": "user.css",
 			"weight": 1000
 		},
-    {
-      "name": "jquery-migrate",
+		{
+			"name": "jquery-migrate",
 			"description": "Optional JQuery helper if extensions use outdated JQuery code.",
-      "type": "script",
-      "uri": "assetghsvs/jquery-migrate/current/jquery-migrate.js",
-      "dependencies": [
-        "jquery"
-      ],
+			"type": "script",
+			"uri": "assetghsvs/jquery-migrate/current/jquery-migrate.js",
+			"dependencies": [
+				"jquery"
+			],
 			"version": "{{versionsSub.jquery-migrate}}"
-    },
-    {
-      "name": "jquery",
+		},
+		{
+			"name": "jquery",
 			"description": "",
-      "type": "script",
-      "uri": "assetghsvs/jquery/current/jquery.slim.js",
+			"type": "script",
+			"uri": "assetghsvs/jquery/current/jquery.slim.js",
 			"version": "{{versionsSub.jquery}}"
-    },
-    {
-      "name": "bootstrap.css",
-      "type": "style",
-      "uri": "assetghsvs/bootstrap/51/bootstrap.min.css",
+		},
+		{
+			"name": "bootstrap.css",
+			"type": "style",
+			"uri": "assetghsvs/bootstrap/51/bootstrap.min.css",
 			"version": "{{versionsSub.bootstrap}}"
-    },
-    {
-      "name": "bootstrap.css.grid",
-      "type": "style",
-      "uri": "assetghsvs/bootstrap/51/bootstrap-grid.min.css",
-      "dependencies": [
-        "bootstrap.css"
-      ],
+		},
+		{
+			"name": "bootstrap.css.grid",
+			"type": "style",
+			"uri": "assetghsvs/bootstrap/51/bootstrap-grid.min.css",
+			"dependencies": [
+				"bootstrap.css"
+			],
 			"version": "{{versionsSub.bootstrap}}"
-    },
-    {
-      "name": "bootstrap.es5",
+		},
+		{
+			"name": "bootstrap.es5",
 			"description": "Overrides Joomla Core! This Template uses bundled version of https://github.com/GHSVS-de/pkg_file_assetghsvs",
-      "type": "script",
-      "uri": "assetghsvs/bootstrap/51/bootstrap.bundle.js",
+			"type": "script",
+			"uri": "assetghsvs/bootstrap/51/bootstrap.bundle.js",
 			"version": "{{versionsSub.bootstrap}}"
-    },
-    {
-      "name": "bootstrap.alert",
+		},
+		{
+			"name": "bootstrap.alert",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.button",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.button",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.carousel",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.carousel",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.collapse",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.collapse",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.dropdown",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.dropdown",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.modal",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.modal",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.offcanvas",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.offcanvas",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.popover",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.popover",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.scrollspy",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.scrollspy",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.tab",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.tab",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    },
-    {
-      "name": "bootstrap.toast",
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		},
+		{
+			"name": "bootstrap.toast",
 			"description": "Overrides and disables Joomla Core because this Template uses bundled Bootstrap version.",
-      "type": "script",
-      "uri": "",
-      "dependencies": [
-        "bootstrap.es5"
-      ]
-    }
-  ]
+			"type": "script",
+			"uri": "",
+			"dependencies": [
+				"bootstrap.es5"
+			]
+		}
+	]
 }
