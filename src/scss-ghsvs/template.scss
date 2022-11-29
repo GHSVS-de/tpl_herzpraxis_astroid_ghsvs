@@ -1,0 +1,141 @@
+/* template.scss */
+
+// "../../../media/assetghsvs/scss/bootstrap/51/"
+
+@import "importerMin";
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/root";
+@import "root";
+
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/reboot";
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/type";
+@import "../../../media/assetghsvs/scss/bootstrap/51/images";
+@import "figure-and-images";
+
+// Neu in BS5
+@import "../../../media/assetghsvs/scss/bootstrap/51/containers";
+
+@import "spacings-custom";
+
+// Nicht mehr in BS5. Variablen fehlen, falls aus BS4 übernehmen willst.
+@import "../../../media/assetghsvs/scss/bootstrap/51/grid";
+@import "../../../media/assetghsvs/scss/bootstrap/51/tables";
+@import "../../../media/assetghsvs/scss/bootstrap/51/forms";
+@import "forms-custom";
+@import "../../../media/assetghsvs/scss/bootstrap/51/buttons";
+
+// Hat mehrere Bugs in BS5. Später testen.
+// @import "buttons";
+@import "buttons-bs5";
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/transitions";
+@import "../../../media/assetghsvs/scss/bootstrap/51/dropdown";
+@import "../../../media/assetghsvs/scss/bootstrap/51/button-group";
+
+// Nicht mehr in BS5.
+// @import "../../../media/assetghsvs/scss/bootstrap/51/input-group";
+
+// Nicht mehr in BS5.
+// @import "../../../media/assetghsvs/scss/bootstrap/51/custom-forms";
+
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/nav";
+@import "nav-custom";
+@import "../../../media/assetghsvs/scss/bootstrap/51/navbar";
+
+// Hat mehrere Bugs in BS5. Später testen.
+// @import "navbar"; Stattdessen:
+//@import "navbar-custom-bs5";
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/card";
+
+// Neu in BS5. Verwende ich aber noch nicht so, dass sich das lohnt.
+@import "../../../media/assetghsvs/scss/bootstrap/51/accordion";
+
+// Kann kein word-wrap:
+@import "../../../media/assetghsvs/scss/bootstrap/51/breadcrumb";
+// Zurück zum Inline-Styling:
+// @import "breadcrumb-custom";
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/pagination";
+@import "../../../media/assetghsvs/scss/bootstrap/51/badge";
+
+// Nicht mehr in BS5. Verwendete ich auch in BS4 nicht.
+// @import "../../../media/assetghsvs/scss/bootstrap/51/jumbotron";
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/alert";
+
+// Verwendete ich auch in BS4 nicht.
+// @import "../../../media/assetghsvs/scss/bootstrap/51/progress";
+
+// Nicht mehr in BS5.
+// @import "../../../media/assetghsvs/scss/bootstrap/51/media";
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/list-group";
+@import "list-group";
+// @import "list";
+
+// BS5. Nervt wegen SVG.
+// @import "../../../media/assetghsvs/scss/bootstrap/51/close";
+@import "close";
+
+
+@import "../../../media/assetghsvs/scss/bootstrap/51/toasts";
+@import "toasts-custom";
+@import "../../../media/assetghsvs/scss/bootstrap/51/modal";
+
+// Verwendete ich ALLE auch in BS4 nicht.
+// @import "../../../media/assetghsvs/scss/bootstrap/51/tooltip";
+// @import "../../../media/assetghsvs/scss/bootstrap/51/popover";
+// @import "../../../media/assetghsvs/scss/bootstrap/51/carousel";
+// @import "../../../media/assetghsvs/scss/bootstrap/51/spinners";
+
+// Neu in BS5.
+@import "../../../media/assetghsvs/scss/bootstrap/51/offcanvas";
+@import "offcanvas-custom";
+
+// Seit BS5.1.0
+// @import "../../../media/assetghsvs/scss/bootstrap/51/placeholders";
+
+// Nicht mehr in BS5.
+// @import "../../../media/assetghsvs/scss/bootstrap/51/print";
+
+// Neu in BS5
+@import "../../../media/assetghsvs/scss/bootstrap/51/helpers";
+
+// Neu in BS5
+@import "../../../media/assetghsvs/scss/bootstrap/51/utilities/api";
+
+// _base wird benötigt, wenn eine der beiden nachfolgenden geladen wird.
+// @import "icomoon2fontawseome-free_base";
+// @import "icomoon2fontawseome-free";
+// @import "icomoon2fontawseome-free_small";
+
+@import "bs4-bs5-translator";
+
+// Auch ein Loader. Und lädt Basis-Variablen.
+
+/* astroid/astroid.scss - START */
+@import "astroid/astroid";
+/* astroid/astroid.scss - END */
+
+/* one/style.scss - START */
+@import "one-style";
+/* one/style.scss - END */
+@import "mod_contactghsvs";
+@import "mod_footerghsvs";
+@import "noscript";
+@import "shariff";
+@import "borders";
+
+@import "collapse";
+
+@import "svg-icons";
+
+@import "mobilemenu-custom";
+@import "overridesGhsvs";
+
+// Siehe Kommentar in dieser Datei.
+@import "responsiveghsvs";

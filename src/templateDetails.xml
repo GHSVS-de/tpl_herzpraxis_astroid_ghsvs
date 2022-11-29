@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension type="{{type}}" client="{{client}}" method="{{method}}">
+	<name>{{filename}}</name>
+	<author>{{authorName}}</author>
+	<creationDate>{{creationDate}}</creationDate>
+	<copyright>{{copyright}}</copyright>
+	<license>{{licenseLong}}</license>
+	<authorUrl>{{authorUrl}}</authorUrl>
+	<version>{{version}}</version>
+	<description>{{nameUpper}}_XML_DESCRIPTION</description>
+
+	<updateservers><server type="extension" priority="1" name="{{nameUpper}}">{{xmlserver}}/{{name}}-update.xml</server></updateservers>
+
+	<changelogurl>{{xmlserver}}/{{name}}-changelog.xml</changelogurl>
+
+	<infourl>{{infourl}}?file={{name}}</infourl>
+
+	<scriptfile>installerScript.php</scriptfile>
+	<minimumPhp>{{minimumPhp}}</minimumPhp>
+	<maximumPhp>{{maximumPhp}}</maximumPhp>
+	<minimumJoomla>{{minimumJoomla}}</minimumJoomla>
+	<maximumJoomla>{{maximumJoomla}}</maximumJoomla>
+	<allowDowngrades>{{allowDowngrades}}</allowDowngrades>
+	<inheritable>{{inheritable}}</inheritable>
+
+	<files>
+		<folder>___Stile-Sicherungen__</folder>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>scss</folder>
+		<folder>scss-ghsvs</folder>
+		<folder>src</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>joomla.asset.json</filename>
+		<filename>LICENSE.txt</filename>
+		<filename>offline.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	{{namespace}}
+	<positions>
+		<position>astroid-header</position>
+		<position>astroid-top-social</position>
+		<position>astroid-top-contact</position>
+		<position>slider</position>
+		<position>breadcrumbs</position>
+		<position>ueberContent-links</position>
+		<position>ueberContent-rechts</position>
+		<position>content-top</position>
+		<position>content-bottom</position>
+		<!--unter-page_heading wird per Code in JLayout page_heading.php gerendert. -->
+		<position>unter-page_heading</position>
+		<position>unter-main-bs</position>
+		<position>unterContent-a</position>
+		<position>unterContent-b</position>
+		<position>unterContent-c</position>
+		<position>right</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>offcanvas</position>
+		<position>offcanvasContentDummyGhsvs</position>
+		<position>offcanvasLeftDummyGhsvs</position>
+		<position>debug</position>
+		<position>copyright</position>
+	</positions>
+
+   <config>
+      <fields name="params">
+         <fieldset name="basic" addfieldpath="/libraries/astroid/framework/fields">
+            <field name="astroid" type="astroidmanagerlink"></field>
+         </fieldset>
+      </fields>
+   </config>
+</extension>

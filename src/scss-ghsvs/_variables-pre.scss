@@ -1,0 +1,27 @@
+// Some global variables must be overriden early because they
+// are used often in /bootstrap/_variables.scss to define other variables.
+
+// For some others it's easier to define them here for later use or a must.
+
+// "If a variable has already been assigned, then it won't be re-assigned by the !default values in Bootstrap."
+
+$font-weight-normal: 500;
+
+$prosalusRed: #AD3526;
+$prosalusOrange: #EC7A00;
+$xingBackground: #007578;
+$herzGrau: #F2F2F2;
+$herzGrauTransparent: #F2F2F2dd;
+
+$prosalusBgImage: '../images/hg-streifen-grau.png';
+
+// Achtung! Hat Transparenz!
+$prosalusBlueLight: #c8dce64d;
+
+$red: $prosalusRed;
+$orange: $prosalusOrange;
+
+$yellow-light: #ffffcc;
+
+// Keine Ahnung, warum das hier sein muss. Also in variables-pre
+$component-active-bg: $red;

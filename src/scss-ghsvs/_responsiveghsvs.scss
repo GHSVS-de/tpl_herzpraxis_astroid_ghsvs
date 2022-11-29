@@ -1,0 +1,67 @@
+/*
+Überschreibt Werte währen von-unten-Breakpoint-Tests nach oben.
+Ggf. die Werte auch gleich ins Original übernehmen, wenn das eh auch für größere
+Screens passt.
+*/
+.page_heading, .articlesubtitle
+{
+	padding: ($paragraph-margin-bottom * .5) 0 0;
+}
+.com-content-article__body
+{
+	ul
+	{
+		list-style-position: inside;
+		padding-left: 0;
+		list-style-type: square;
+		li
+		{
+			margin-bottom: ($paragraph-margin-bottom * .5);
+		}
+		// circle square
+	}
+}
+
+// Sollte synchron sein zu max-width in TEMPLATENAME/html\frontend\ghsvs\logoFigure.php
+@media (max-width: 575.98px)
+{
+	.astroidLogo
+	{
+		max-height: 70px;
+	}
+}
+
+.astroid-header-sticky
+{
+	.astroidLogo
+	{
+		max-height: 45px;
+	}
+	.buttonTitle
+	{
+		// display: none;
+	}
+	.btn-offcanvas-menu
+	{
+		padding-top: $btn-padding-y * .5;
+		padding-bottom: $btn-padding-y * .5;
+	}
+}
+
+
+.btn-offcanvas-menu
+{
+	@media (max-width: 389.98px)
+	{
+		border-color: #fff;
+	}
+
+	.buttonTitle
+	{
+		@media(max-width: 767.98px)
+		{
+			@include font-size($font-size-base * .75);
+			font-weight: $font-weight-bold;
+		}
+	}
+}

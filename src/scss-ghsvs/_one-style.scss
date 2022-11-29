@@ -1,0 +1,44 @@
+.fa-ul {
+	margin-left: 1.5em;
+}
+
+body.site {
+	&.astroid-framework {
+		&.layout-edit {
+			.chzn-container {
+				min-width: 200px;
+			}
+		}
+	}
+}
+
+// Footer Section
+.footer-section
+{
+
+	@include backGrounder(null, top, null);
+
+}
+
+.unterContent-section
+{
+	.leeresDummyRow
+	{
+		--bs-gutter-x: 0;
+		@include borderer();
+	}
+
+	.moduletable
+	{
+		@include backGrounder(null, null);
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 1.5rem;
+		padding-right: 3rem;
+		height: 100%;
+	}
+	.astroid-module-position
+	{
+		height: 100%;
+	}
+} // /.unterContent-section

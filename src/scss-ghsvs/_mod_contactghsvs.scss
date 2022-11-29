@@ -1,0 +1,24 @@
+.mod_contactghsvs_row
+{
+	$myMargin: $block-space-custom * .5;
+
+	&.position-unter-page_heading
+	{
+		.mod_contactghsvs_col
+		{
+			margin-top: $myMargin;
+		}
+	}
+
+	@include media-breakpoint-down(md)
+	{
+		&.position-unter-main-bs
+		{
+			&> div:last-of-type
+			{
+				margin-top: $myMargin;
+			}
+		}
+	}
+
+}

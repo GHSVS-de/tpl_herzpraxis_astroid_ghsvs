@@ -1,0 +1,38 @@
+/* _forms-custom.scss */
+
+.control-group
+{
+  margin: 1rem 0;
+
+	.control-label
+	{
+		margin-bottom: 0.25rem;
+	}
+}
+// Validation
+.invalid {
+  color: $danger;
+  border-color: $danger;
+}
+
+.valid {
+  border-color: $success;
+}
+
+.form-control-feedback {
+  display: block;
+}
+
+/* .form-control
+{
+  &::placeholder
+	{
+    font-size: 0.9rem;
+  }
+}
+
+// Removed in BS5. It's a pain to revise the forms again.
+.form-group
+{
+  margin-bottom: $form-group-margin-bottom-custom;
+} */

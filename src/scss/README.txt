@@ -1,0 +1,4 @@
+- Dieses Template nutzt Plugin "System - Astroid-Framework-Helper by GHSVS.de" für SCSS-Kompilierung.
+- Die SCSS-Dateien befinden sich in Ordner templates\herzpraxis_astroid_ghsvs\scss-ghsvs\
+- Im Normalfall ist obiges Plugin so konfiguriert, dass es gar nichts tut. Siehe Einstellung "Kompilierung erzwingen".
+- Bitte fragen bei Bedarf! kontakt@ghsvs.de

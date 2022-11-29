@@ -1,0 +1,89 @@
+{
+	"name": "tpl_herzpraxis_astroid_ghsvs",
+	"nameReal": "",
+	"filename": "herzpraxis_astroid_ghsvs",
+	"version": "2021.12.13",
+	"versionCompare": "2021.12.13",
+	"versionSub": "5.1.3",
+	"update": {
+		"versionsSubComment": "Für joomla.asset.json. Dort auszeichnen als {{versionsSub.bootstrap}} etc.",
+		"versionsSub": {
+			"bootstrap": "5.1.3-assetghsvs",
+			"jquery": "3.6.1-assetghsvs",
+			"jquery-migrate": "3.4.0-assetghsvs"
+		},
+		"type": "template",
+		"folder": "",
+		"client": "site",
+		"tag": "stable",
+		"targetplatform": [
+			"4.*"
+		],
+		"namespace": "GHSVS\\Template\\HerzpraxisAstroidGhsvs",
+		"inheritable": "0"
+	},
+	"releaseTxt": {
+		"title": "Joomla site template tpl_herzpraxis_astroid_ghsvs (Bootstrap 5.1 variant)",
+		"requires": [
+			"plg_system_astroidghsvs",
+			"plg_system_bs3ghsvs_bs5",
+			"pkg_file_assetghsvs",
+			"templaza/astroid-framework"
+		],
+		"uses": [],
+		"language": []
+	},
+	"changelog": {
+		"projecturl": "https://github.com/GHSVS-de/tpl_herzpraxis_astroid_ghsvs",
+		"infosDE": "",
+		"infosEN": "",
+		"docsDE": "",
+		"docsEN": "",
+		"lastTests": [
+			"Joomla 4.2",
+			"PHP 8.0",
+			"PHP 8.1",
+			"templaza/astroid-framework 2.6.2"
+		]
+	},
+	"minimumPhp": "7.4.0",
+	"maximumPhp": "8.99999.99999",
+	"minimumJoomla": "4.2.0",
+	"maximumJoomla": "4.9999.9999",
+	"allowDowngrades": "1",
+	"creationDate": "2021-12-13",
+	"licenseLong": "GNU General Public License version 3 or later; see LICENSE.txt.",
+	"copyright": "(C) 2021, G@HService Berlin Neukölln, Volkmar Volli Schlothauer.",
+	"author": {
+		"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+		"url": "https://ghsvs.de"
+	},
+	"contributors": [
+		{
+			"name": "G@HService Berlin Neukölln, Volkmar Volli Schlothauer",
+			"url": "https://ghsvs.de"
+		}
+	],
+	"bugs": "https://github.com/GHSVS-de/tpl_herzpraxis_astroid_ghsvs/issues",
+	"homepage": "https://github.com/GHSVS-de/tpl_herzpraxis_astroid_ghsvs#readme",
+	"keywords": [
+		"joomla",
+		"template",
+		"templaza/astroid-framework"
+	],
+	"private": true,
+	"description": "Joomla 4 site template with several dependencies(!).",
+	"license": "GPL-3.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GHSVS-de/tpl_herzpraxis_astroid_ghsvs.git"
+	},
+	"scripts": {
+		"build": "node build.js",
+		"updateCheck": "npm outdated",
+		"update": "npm update --save-dev"
+	},
+	"dependencies": {},
+	"devDependencies": {},
+	"browserslist": []
+}

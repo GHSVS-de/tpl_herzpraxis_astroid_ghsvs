@@ -1,0 +1,166 @@
+#div4all
+{
+	max-width: $div4all-max-width-custom;
+	margin: 0 auto;
+	// background-color: $div4all-bg-custom;
+
+	@media (min-width: ($div4all-max-width-custom + 20))
+	{
+		margin-top: 10px;
+	}
+}
+
+.div4maxWidth
+{
+	max-width: map-get($container-max-widths, xxl);
+	margin: 0 auto;
+}
+
+// Muss .astroid-header-section und nicht astroid-horizontal-header, so lange ein Border unten.
+.astroid-header-section,
+.astroid-header-sticky
+{
+	@include backGrounder(null, bottom, $white);
+}
+
+.astroid-header
+{
+	figure{
+		margin: 0;
+	}
+
+	&> div
+	{
+		align-items: center !important;
+
+		// Für Sticky nötig.
+		width: 100%;
+	}
+
+	&.astroid-header-sticky
+	{
+		// Ausgleiche für container-fluid paddings, die in Sticky nicht greifen.
+		.btn-offcanvas-menu
+		{
+			margin-right: $container-padding-x
+		}
+		.header-left-section
+		{
+			padding-left: $container-padding-x
+		}
+	}
+}
+
+.mod-box
+{
+	@extend .p-3;
+	background-color: $prosalusRed;
+	color: $white;
+
+	.mod-custom
+	{
+		:last-child
+		{
+			margin-bottom: .1rem;
+		}
+	}
+
+	a
+	{
+		color: $white;
+	}
+
+}
+
+.page_heading, .articlesubtitle
+{
+	font-family: var(--#{$variable-prefix}font-serif);
+	padding: $block-space-custom 0 0;
+	font-style: italic;
+	color: $text-muted;
+}
+.page_subheading, .articlesubtitle
+{
+	font-size: 0.75em;
+}
+
+.item-page .card-header
+{
+	font-style: italic;
+}
+
+// Search, Suche
+// Aus astroid/layouts
+div.search{
+	input {
+		border-radius: 0;
+	}
+	input.button{
+		object-fit: none;
+	}
+	.radio {
+		margin-right: 8px;
+		input {
+			margin-right: 3px;
+		}
+	}
+	.checkbox {
+		margin-right: 8px;
+	}
+}
+// von GHSVS
+.search-results
+{
+	margin-top: 1.5rem;
+}
+
+// Suchergebnisse. com_search.
+.highlight
+{
+	background-color: lighten($yellow, 20%);
+}
+dd.result-text
+{
+	margin-bottom: 1rem;
+}
+dd.result-category
+{
+	margin-bottom: .25rem;
+}
+
+// Z.B. im Adress-Modul Link auf aktuelle Seite nicht anzeigen.
+.hideGhsvs
+{
+	display: none;
+}
+.lageplan-anfahrt-alias .a4anfahrtSeite
+{
+	@extend .hideGhsvs;
+}
+.schreiben-sie-uns-alias .a4kontaktFormular
+{
+	@extend .hideGhsvs;
+}
+
+.hyphenate{
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+.donthyphenate{
+	word-wrap: break-word;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	-o-hyphens: none;
+	hyphens: none;
+}
+
+.item-page
+{
+	@extend .hyphenate;
+}

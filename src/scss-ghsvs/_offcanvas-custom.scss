@@ -1,0 +1,9 @@
+// OffcanvasLeft. An Pos. offcanvasLeftDummyGhsvs
+
+.offcanvas.offcanvas-start
+{
+	@include media-breakpoint-up(sm)
+	{
+		max-width: 60vw;
+	}
+}

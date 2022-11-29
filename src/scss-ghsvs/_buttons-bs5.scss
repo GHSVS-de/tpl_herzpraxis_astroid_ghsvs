@@ -1,0 +1,32 @@
+// Die Artikel-Buttons (Navigation).
+// Irgendwo gibt es Zauberwerk von mir, dass diese Klassen nachträglich setzt.
+.mod_articles_category_buttons-horizontal + .mod_articles_category_buttons-horizontal
+{
+	margin-top: $block-space-custom;
+}
+.buttons-horizontal .btn-outline-danger.disabled
+{
+	@extend .btn-outline-success.disabled;
+}
+
+.btn-offcanvas-menu
+{
+	@extend .btn-outline-danger;
+	line-height: 1;
+	margin-left: .75rem;
+
+	.buttonTitle
+	{
+		display: block;
+
+	}
+}
+p.readmore
+{
+	margin-bottom: 0;
+
+	.btn
+	{
+		@extend .btn-primary;
+	}
+}

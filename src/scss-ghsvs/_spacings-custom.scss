@@ -1,0 +1,59 @@
+.item-page
+{
+	max-width: $text-area-max-width-custom;
+	margin-top: $block-space-custom;
+}
+
+.articlePagination,
+.items-more
+{
+	margin-top: $block-space-custom;
+}
+
+#CfMenueOben
+{
+	margin-top: $block-space-custom;
+	margin-bottom: $block-space-custom;
+
+	@include media-breakpoint-down(md)
+	{
+		margin-top: $block-space-custom * .5;
+		margin-bottom: $block-space-custom * .5;
+	}
+}
+#CfButtonGruppe,
+#CfBreadcrumb
+{
+	padding: $block-space-custom * .5;
+}
+
+#Position-Content-Bottom
+{
+	margin-top: $section-space-custom;
+}
+
+// Gesichert in herz verwendet.
+#CfFooter,
+#CfUnterMain
+{
+	margin-top: $section-space-custom;
+}
+
+.section-copyright
+{
+	padding-bottom: $section-space-custom*1.5;
+	padding-top: $section-space-custom;
+	background-color: $herzGrauTransparent;
+}
+#Slider-Section
+{
+	//background: linear-gradient(#74ABDD, #74ABDD 49.9%, #498DCB 50.1%, transparent 100%);
+	background: linear-gradient(to bottom, $herzGrau 60%, $body-bg 40%);
+}
+
+// Suchergebnisse. com_search.
+ul.pagination
+{
+	margin-top: $section-space-custom * 1.25;
+	margin-bottom: 0;
+}
