@@ -7,18 +7,18 @@
 	"license": "{{licenseLong}}",
 	"assets": [
 		{
-			"name": "herzpraxis_astroid_ghsvs.framework",
+			"name": "{{filename}}.framework",
 			"type": "preset",
 			"dependencies": [
 				"bootstrap.es5#script",
 				"jquery#script",
-				"herzpraxis_astroid_ghsvs.script#script",
-				"herzpraxis_astroid_ghsvs.user#style",
-				"herzpraxis_astroid_ghsvs.user#script"
+				"{{filename}}.script#script",
+				"{{filename}}.user#style",
+				"{{filename}}.user#script"
 			]
 		},
 		{
-			"name": "herzpraxis_astroid_ghsvs.script",
+			"name": "{{filename}}.script",
 			"description": "Javascript specific for this template. Inside folder TEMPLATENAME/js.",
 			"type": "script",
 			"uri": "script.js",
@@ -26,14 +26,14 @@
 			"version": "{{version}}"
 		},
 		{
-			"name": "herzpraxis_astroid_ghsvs.user",
+			"name": "{{filename}}.user",
 			"description": "Optional Javascript overrides. Inside folder TEMPLATENAME/js.",
 			"type": "script",
 			"uri": "user.js",
 			"weight": 1000
 		},
 		{
-			"name": "herzpraxis_astroid_ghsvs.user",
+			"name": "{{filename}}.user",
 			"description": "Optional CSS overrides. Inside folder TEMPLATENAME/css.",
 			"type": "style",
 			"uri": "user.css",
