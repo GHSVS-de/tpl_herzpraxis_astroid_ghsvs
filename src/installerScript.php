@@ -73,6 +73,9 @@ class  herzpraxis_astroid_ghsvsInstallerScript extends InstallerScript
 				{
 					return false;
 				}
+
+				$msg = "Requirements for installation successfully checked.";
+				Log::add($msg, Log::NOTICE, 'jerror');
 			}
 
 			if (trim((string) $manifest->allowDowngrades))
@@ -122,6 +125,8 @@ class  herzpraxis_astroid_ghsvsInstallerScript extends InstallerScript
 	 */
 	protected function removeOldUpdateservers()
 	{
+		return;
+
 		$db = Factory::getDbo();
 
 		try
