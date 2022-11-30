@@ -15,6 +15,8 @@ $levelPrefix = Text::_('TPL_MODAL_MENUE_LEVEL_PREFIX');
 
 foreach ($list as $item)
 {
+	$itemParams = $item->getParams();
+
 	$item->liClass = ['list-group-item'];
 
 	if ($item->type !== 'heading' && $item->type !== 'separator')
@@ -74,7 +76,7 @@ foreach ($list as $item)
 	if (
 		$item->id == $active_id
 		|| ($item->type === 'alias'
-			&& $item->params->get('aliasoptions') == $active_id)
+			&& $itemParams->get('aliasoptions') == $active_id)
 	){
 		$item->liClass[] = 'current';
 		$item->aAttributes['aria-current'] = 'page';
@@ -90,7 +92,7 @@ foreach ($list as $item)
 	}
 	elseif ($item->type === 'alias')
 	{
-		$aliasToId = $item->params->get('aliasoptions');
+		$aliasToId = $itemParams->get('aliasoptions');
 
 		if (count($path) > 0 && $aliasToId == $path[count($path) - 1])
 		{
