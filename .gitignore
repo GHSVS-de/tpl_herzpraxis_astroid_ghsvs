@@ -20,5 +20,6 @@ src/vendor/scssphp/scssphp/bin/pscss
 build/build-svgs - Kopie.js
 /dist/*.xml
 /dist/*.txt
-/dist/*.json
+/dist/joomla.asset.json
+
 dist copy/
