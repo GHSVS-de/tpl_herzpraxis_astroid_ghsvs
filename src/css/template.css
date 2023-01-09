@@ -93,31 +93,31 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1.2;
 }
 h1, .h1 {
-  font-size: calc(1.325rem + 0.9vw);
-}
-@media (min-width: 1200px) {
-  h1, .h1 {
-    font-size: 2rem;
-  }
-}
-h2, .h2 {
-  font-size: calc(1.3rem + 0.6vw);
-}
-@media (min-width: 1200px) {
-  h2, .h2 {
-    font-size: 1.75rem;
-  }
-}
-h3, .h3 {
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
-  h3, .h3 {
+  h1, .h1 {
     font-size: 1.5rem;
   }
 }
+h2, .h2 {
+  font-size: calc(1.265rem + 0.18vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 1.4rem;
+  }
+}
+h3, .h3 {
+  font-size: calc(1.255rem + 0.06vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.3rem;
+  }
+}
 h4, .h4 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 h5, .h5 {
   font-size: 1.1rem;
@@ -4459,8 +4459,10 @@ a.nav-link:hover, a.nav-link:focus, a.nav-link:active {
   color: #f8f9fa;
 }
 a.list-group-item-action {
-  text-decoration: underline;
   color: #AD3526;
+}
+a.list-group-item-action:hover, a.list-group-item-action:focus {
+  text-decoration: underline;
 }
 .list-group-item.level-1 {
   font-weight: 700;
@@ -9816,16 +9818,11 @@ body:not(.bodyPrint) a[href^="http://"]:not([href*="herzpraxis.at"])::after, bod
   color: #fff;
 }
 .page_heading, .articlesubtitle {
-  font-family: var(--bs-font-serif);
   padding: 1.5rem 0 0;
-  font-style: italic;
   color: #6c757d;
 }
 .page_subheading, .articlesubtitle {
   font-size: 0.75em;
-}
-.item-page .card-header {
-  font-style: italic;
 }
 div.search input {
   border-radius: 0;

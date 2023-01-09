@@ -74,9 +74,9 @@
 
 .page_heading, .articlesubtitle
 {
-	font-family: var(--#{$variable-prefix}font-serif);
+	// font-family: var(--#{$variable-prefix}font-serif);
 	padding: $block-space-custom 0 0;
-	font-style: italic;
+	// font-style: italic;
 	color: $text-muted;
 }
 .page_subheading, .articlesubtitle
@@ -86,7 +86,7 @@
 
 .item-page .card-header
 {
-	font-style: italic;
+	// font-style: italic;
 }
 
 // Search, Suche

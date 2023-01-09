@@ -2,10 +2,17 @@
 {
 	color: $light;
 }
+
+// Offcanvas Menue
 a.list-group-item-action
 {
-	text-decoration: if($link-decoration == underline, underline, null);
+	// text-decoration: if($link-decoration == underline, underline, null);
 	color: $link-color;
+
+	&:hover, &:focus
+	{
+		text-decoration: underline;
+	}
 }
 
 // Menü. Menu.
