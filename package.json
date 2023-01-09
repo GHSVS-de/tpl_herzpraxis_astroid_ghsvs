@@ -2,14 +2,14 @@
 	"name": "tpl_herzpraxis_astroid_ghsvs",
 	"nameReal": "",
 	"filename": "herzpraxis_astroid_ghsvs",
-	"version": "2022.11.30",
-	"versionCompare": "2021.12.13",
+	"version": "2023.01.09",
+	"versionCompare": "2022.11.30",
 	"versionSub": "5.1.3",
 	"update": {
 		"versionsSubComment": "Für joomla.asset.json. Dort auszeichnen als {{versionsSub.bootstrap}} etc.",
 		"versionsSub": {
 			"bootstrap": "5.1.3-assetghsvs",
-			"jquery": "3.6.1-assetghsvs",
+			"jquery": "3.6.2-assetghsvs",
 			"jquery-migrate": "3.4.0-assetghsvs"
 		},
 		"type": "template",
@@ -43,7 +43,7 @@
 			"Joomla 4.2",
 			"PHP 8.0",
 			"PHP 8.1",
-			"templaza/astroid-framework 2.6.2"
+			"templaza/astroid-framework 2.6.3"
 		]
 	},
 	"minimumPhp": "7.4.0",
