@@ -23,6 +23,7 @@ class  herzpraxis_astroid_ghsvsInstallerScript extends InstallerScript
 		'/templates/herzpraxis_astroid_ghsvs/modules.php',
 		'/templates/herzpraxis_astroid_ghsvs/css/mod_splideghsvs.min.css.map',
 		'/templates/herzpraxis_astroid_ghsvs/css/mod_splideghsvs.css.map',
+		'/templates/herzpraxis_astroid_ghsvs/html/modules.php',
 	];
 
 	/**
@@ -35,6 +36,7 @@ class  herzpraxis_astroid_ghsvsInstallerScript extends InstallerScript
 		'/templates/herzpraxis_astroid_ghsvs/html/mod_breadcrumbs-OLD',
 		'/templates/herzpraxis_astroid_ghsvs/css/bootstrap',
 		'/templates/herzpraxis_astroid_ghsvs/js/bootstrap',
+		'/templates/herzpraxis_astroid_ghsvs/css/__Prefixed-CSS',
 	];
 
 	public function preflight($type, $parent)
