@@ -13,16 +13,19 @@ use Joomla\CMS\Uri\Uri;
 		// Zeige immer an, ggf. versteckt.
 		$showHereClass = '';
 
-		if (!$params->get('showHere', 1))
+		if ($params->get('showHere', 1))
 		{
 			$showHereClass = ' visually-hidden';
-		} ?>
+		?>
 		<li class="breadcrumb-item">
 			{svg{bi/geo-fill}}
 			<span class="<?php echo $showHereClass; ?>">
 			<?php echo Text::_('MOD_BREADCRUMBS_HERE'); ?>
 			</span>
 		</li>
+		<?php
+		}
+		?>
 		<?php
 		// Get rid of duplicated entries on trail including home page when using multilanguage
 		for ($i = 0; $i < $count; $i++)
@@ -70,7 +73,7 @@ use Joomla\CMS\Uri\Uri;
 				}
 				elseif ($show_last && !in_array(Factory::getApplication()->input->get('option', ''), ['com_tags', 'com_osmap']))
 				{ ?>
-				<li class="breadcrumb-item active fst-italic" aria-current="location">
+				<li class="breadcrumb-item active" aria-current="location">
 					<?php echo $item->name; ?>
 				</li>
 				<?php
