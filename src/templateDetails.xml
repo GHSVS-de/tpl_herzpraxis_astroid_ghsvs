@@ -22,7 +22,7 @@
 	<minimumJoomla>{{minimumJoomla}}</minimumJoomla>
 	<maximumJoomla>{{maximumJoomla}}</maximumJoomla>
 	<allowDowngrades>{{allowDowngrades}}</allowDowngrades>
-	<inheritable>{{inheritable}}</inheritable>
+	{{inheritable}}
 
 	<files>
 		<folder>___Stile-Sicherungen__</folder>
