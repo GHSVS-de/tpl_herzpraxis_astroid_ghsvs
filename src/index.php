@@ -6,6 +6,7 @@ use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\PluginHelper;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Layout\LayoutHelper;
 use GHSVS\Template\HerzpraxisAstroidGhsvs\Site\Helper\TemplateHelper;
 
 if (! ($done = PluginHelper::isEnabled('system', 'astroidghsvs'))) {
@@ -66,6 +67,7 @@ if ($done)
 			//'template-zalta|noInsert',
 			'template',
 			'mod_splideghsvs|noInsert',
+			'toTop|noInsert',
 		];
 
 		/* If your template is NOT an Astroid template the plugin method
@@ -109,7 +111,8 @@ $this->setHtml5(true);
 		} ?>
 		<?php if (!$isRobot)
 		{
-		 echo HTMLHelper::_('bs3ghsvs.toTop');
+		 // echo HTMLHelper::_('bs3ghsvs.toTop');
+		 echo LayoutHelper::render('ghsvs.toTop');
 		} ?>
 
 	</body>
