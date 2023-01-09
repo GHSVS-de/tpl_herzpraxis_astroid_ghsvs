@@ -13,11 +13,8 @@ use Joomla\CMS\Layout\LayoutHelper;
 <div class="search<?php echo $this->pageclass_sfx; ?>">
 	<?php
 	#### SEITENÜBERSCHRIFT (Menü)
-	if ($this->params->get('show_page_heading'))
-	{
-		echo LayoutHelper::render('ghsvs.page_heading',
-			['params' => $this->params]);
-	}
+	echo LayoutHelper::render('ghsvs.page_heading',
+		['params' => $this->params]);
 	#### ENDE - SEITENÜBERSCHRIFT (Menü)
 	?>
 <div class="rowsss">

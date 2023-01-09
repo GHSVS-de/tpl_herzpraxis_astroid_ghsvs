@@ -20,11 +20,8 @@ $htag    = $tparams->get('show_page_heading') ? 'h2' : 'h1';
 <div class="com-contact contact" itemscope itemtype="https://schema.org/Person">
 	<?php
 	#### SEITENÜBERSCHRIFT (Menü)
-	if ($this->params->get('show_page_heading'))
-	{
-		echo LayoutHelper::render('ghsvs.page_heading',
-			['params' => $this->params]);
-	}
+	echo LayoutHelper::render('ghsvs.page_heading',
+		['params' => $this->params]);
 	#### ENDE - SEITENÜBERSCHRIFT (Menü)
 	?>
 

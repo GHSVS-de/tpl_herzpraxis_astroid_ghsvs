@@ -8,9 +8,11 @@ use Joomla\CMS\Layout\LayoutHelper;
 <div class="blog-featured<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="https://schema.org/Blog">
 
 	<?php
-	echo HTMLHelper::_('bs3ghsvs.layout', 'ghsvs.page_heading',
-			array('params' => $this->params)
-		); ?>
+	#### SEITENÜBERSCHRIFT (Menü)
+	echo LayoutHelper::render('ghsvs.page_heading',
+		['params' => $this->params]);
+	#### ENDE - SEITENÜBERSCHRIFT (Menü)
+	?>
 
 	<?php
 	// Oben. blendet die Pagination-Links teils aus und zeigt stattdessen SprungLink.

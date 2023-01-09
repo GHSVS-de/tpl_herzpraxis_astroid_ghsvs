@@ -15,6 +15,7 @@ Wenn kein Thumbbild, wird halt großes als Thumb genommen.
 defined('JPATH_BASE') or die;
 
 use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Layout\LayoutHelper;
 
 $params  = $displayData->params;
 $canEdit = $params->get('access-edit');
@@ -45,9 +46,11 @@ if ($params->get('show_description_image'))
 }
 ?>
 <?php
- echo HTMLHelper::_('bs3ghsvs.layout', 'ghsvs.page_heading',
-		array('params' => $params)
-	); ?>
+#### SEITENÜBERSCHRIFT (Menü)
+echo LayoutHelper::render('ghsvs.page_heading',
+	['params' => $this->params]);
+#### ENDE - SEITENÜBERSCHRIFT (Menü)
+?>
 <?php if($params->get('show_category_title', 1)) : ?>
 <div class="page-header">
 	<h2><?php

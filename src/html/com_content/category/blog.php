@@ -8,9 +8,11 @@ use Joomla\CMS\Language\Text;
 <div class="blog-category<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="https://schema.org/Blog">
 
 	<?php
-	echo HTMLHelper::_('bs3ghsvs.layout', 'ghsvs.page_heading',
-			array('params' => $this->params)
-		); ?>
+	#### SEITENÜBERSCHRIFT (Menü)
+	echo LayoutHelper::render('ghsvs.page_heading',
+		['params' => $this->params]);
+	#### ENDE - SEITENÜBERSCHRIFT (Menü)
+	?>
 
 	<?php if ($this->params->get('show_description') && $this->category->description) : ?>
 	<div class="category-desc clearfix">
