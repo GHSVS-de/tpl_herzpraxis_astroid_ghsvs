@@ -10,7 +10,7 @@
 			"name": "{{filename}}.framework",
 			"type": "preset",
 			"dependencies": [
-				"bootstrap.es5#script",
+				"template.{{filename}}.bootstrap.es5#script",
 				"jquery#script",
 				"{{filename}}.script#script",
 				"{{filename}}.user#style",
@@ -53,7 +53,7 @@
 			"name": "jquery",
 			"description": "",
 			"type": "script",
-			"uri": "assetghsvs/jquery/current/jquery.slim.js",
+			"uri": "assetghsvs/jquery/current/jquery.js",
 			"version": "{{versionsSub.jquery}}"
 		},
 		{
@@ -73,10 +73,17 @@
 		},
 		{
 			"name": "bootstrap.es5",
-			"description": "Overrides Joomla Core! This Template uses bundled version of https://github.com/GHSVS-de/pkg_file_assetghsvs",
+			"description": "Deprecated. WIrkt nicht mehr seit Joomla 5.",
 			"type": "script",
 			"uri": "assetghsvs/bootstrap/51/bootstrap.bundle.js",
 			"version": "{{versionsSub.bootstrap}}"
+		},
+		{
+			"name": "template.{{filename}}.bootstrap.es5",
+			"description": "Krücke für Joomla 5, weil bootstrap.es5 tot seitens Joomla-Core. Siehe ggf. auch plg_systembs3, falls Bootstrap Early aktiviert ist zumindest.",
+			"type": "script",
+			"uri": "assetghsvs/bootstrap/51/bootstrap.bundle.js",
+			"version": "5.1.3-assetghsvs"
 		},
 		{
 			"name": "bootstrap.alert",
@@ -84,7 +91,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -93,7 +100,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -102,7 +109,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -111,7 +118,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -120,7 +127,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -129,7 +136,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -138,7 +145,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -147,7 +154,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -156,7 +163,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -165,7 +172,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
@@ -174,7 +181,7 @@
 			"type": "script",
 			"uri": "",
 			"dependencies": [
-				"bootstrap.es5"
+				"template.{{filename}}.bootstrap.es5"
 			]
 		},
 		{
