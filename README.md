@@ -11,7 +11,7 @@ This is not a template that you install and then it runs smoothly. It needs back
 Das ist kein Template, das man installiert und dann läuft es reibungslos. Es braucht Hintergrundwissen und regelmäßige Nacharbeit. Versionen sind nicht immer rückwärtskompatibel. Es braucht weitere Erweiterungen und Zeugs damit es korrekt läufts.
 
 ----------------
-# My personal build procedure (WSL 1, Debian, Win 10)
+# My personal build procedure (WSL 1 or 2, Debian, Win 10)
 
 **Build procedure uses local repo fork of https://github.com/GHSVS-de/buildKramGhsvs**
 
