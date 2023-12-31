@@ -4,6 +4,8 @@ defined('_JEXEC') or die;
 
 use Joomla\Registry\Registry;
 
+// @since 2023-12
+use GHSVS\Plugin\System\Bs3Ghsvs\Helper\Bs3GhsvsItemHelper as Bs3ghsvsItem;
 /*
 $displayData:
 item mandatory
